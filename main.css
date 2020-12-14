@@ -1,0 +1,23 @@
+span {
+  color: #18B4DB;
+}
+.header {
+  background-color: #073B47;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section {
+  text-align: center;
+}
+p {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.tech-skills {
+  text-align: center;
+}
