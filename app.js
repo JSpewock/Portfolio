@@ -10,7 +10,7 @@ $(() => {
   $('<div>').attr('id', 'main').appendTo('body').css('margin-top', 40)
   $('<div>').attr('id', 'personal').appendTo('#main')
   $('<div>').attr('id', 'headshot').appendTo('#personal')
-  $('<img>').attr('src', './images/better-fit.jpg').appendTo('#headshot')
+  $('<img>').attr('src', './images/better-fit.jpg').attr('id', 'pic-of-me').appendTo('#headshot')
   $('<h2>').html('Jeremy Spewock').appendTo('#headshot')
   $('<h3>').text('Full-Stack Software Engineer').appendTo('#headshot')
   $('<div>').attr('id', 'about').appendTo('#personal')
@@ -39,7 +39,7 @@ $(() => {
   })
   $('<h1>').text('The Basic Pokemon Card Battle').attr('class', 'project-title').appendTo('#project1-info')
   $('<p>').text('This project was essentially a browser game that simulates a basic version of a pokemon card battle but you get random cards everytime! It was built using HTML, CSS, JavaScript, and jQuery as well as a third party api to collect the card data for the battle.').appendTo('#project1-info')
-  $('<img>').attr('src', './images/better-fit.jpg').attr('class', 'project-picture').appendTo('#project1-img')
+  $('<img>').attr('src', './images/project1.png').attr('class', 'project-picture').appendTo('#project1-img')
 
   // ----------------------------------
   //               Project2
@@ -59,6 +59,7 @@ $(() => {
   })
   $('<h1>').text('GA Course Catalog').attr('class', 'project-title').appendTo('#project2-info')
   $('<p>').text('For this project I built a course catalog/study guide for General Assembly students in my class! This is a full CRUD app that was built using Node.js, Express, Mongoose, EJS, and Bcrypt.').appendTo('#project2-info')
+  $('<img>').attr('src', './images/project2.png').attr('class', 'project-picture').appendTo('#project2-img')
 
   // ---------------------------------
   //             Project3
@@ -78,6 +79,7 @@ $(() => {
   })
   $('<h1>').text('CockTails App').attr('class', 'project-title').appendTo('#project3-info')
   $('<p>').text('This project was actually a collaborative project that I worked on with 2 classmates. It is a MERN stack app that implements Mongo, Express, React, and Node to create a database for storing and searching for various cocktails. It also implements a third party api to increase the number of cocktails in the database.').appendTo('#project3-info')
+  $('<img>').attr('src', './images/project3.png').attr('class', 'project-picture').appendTo('#project3-img')
 
   // ------------------------------
   //             Project4
@@ -97,6 +99,8 @@ $(() => {
   })
   $('<h1>').text('Rantz').attr('class', 'project-title').appendTo('#project4-info')
   $('<p>').text('This project is a discussion board based around ranting. This app was built using Python, Flask, and React and it features things such as jwts for user authentication.').appendTo('#project4-info')
+  $('<img>').attr('src', './images/project4.png').attr('class', 'project-picture').appendTo('#project4-img')
+
   $('<div>').attr('id', 'contact-me').appendTo('#main')
   $('<h2>').text('Contact Me').attr('class', 'section').appendTo('#contact-me')
 })
