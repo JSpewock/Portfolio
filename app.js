@@ -8,20 +8,24 @@ $(() => {
   $('<div>').css('width', '99%').css('margin-left', '0.5%').css('height', (windowHeight/2)).attr('class', 'header').appendTo('body')
   $('<h2>').html(`Hey, my name is <span>Jeremy</span>. Welcome to my portfolio.`).attr('id', 'intro-h2').appendTo('div')
   $('<div>').attr('class', 'nav').css('margin-top', (windowHeight/2)).css('width', '100%').appendTo('body')
-  $('<div>').attr('id', 'main').appendTo('body').css('margin-top', (windowHeight/3 + 5))
-  $('<h2>').text('About Me').attr('class', 'section').attr('id', 'about-h2').appendTo('#main')
   $('<a>').attr('href', './images/new-resume.pdf').text('Resume').appendTo('.nav')
+  $('<a>').attr('href', '#about-section').text('About').appendTo('.nav')
+  $('<a>').attr('href', '#projects-section').text('Projects').appendTo('.nav')
+  $('<a>').attr('href', '#contact-section').text('Contact').appendTo('.nav')
+  $('<div>').attr('id', 'main').appendTo('body').css('margin-top', (windowHeight/3 + 5))
+  $('<a>').attr('name', 'about-section').appendTo('#main')
+  $('<h2>').text('About Me').attr('class', 'section').attr('id', 'about-h2').appendTo('#main')
   $('<div>').attr('id', 'personal').appendTo('#main')
   $('<div>').attr('id', 'headshot').appendTo('#personal')
   $('<img>').attr('src', './images/better-fit.jpg').attr('id', 'pic-of-me').appendTo('#headshot')
   $('<h2>').html('Jeremy Spewock').appendTo('#headshot')
   $('<h3>').text('Full-Stack Software Engineer').appendTo('#headshot')
   $('<div>').attr('id', 'about').appendTo('#personal')
-  $('<a>').attr('name', 'about-section').appendTo('#about')
   $('<h3>').text('Who am I?').appendTo('#about').attr('class', 'tech-skills')
   $('<p>').text('I am a college undergraduate with a passion and desire to deepen my understanding of computer science. I have a love for solving linear and logical problems and I’m determined to further my knowledge in this field and create powerful user-friendly applications by researching the market and using my ever-expanding skill set to meet the needs of the consumer.').appendTo('#about')
   $('<h3>').html(`Technical Skills`).appendTo('#about').attr('class', 'tech-skills')
   $('<p>').text('HTML | JavaScript | CSS | Python | jQuery | NodeJS | Git |  GitHub | MongoDB | React.js | Postman | Flexbox | Bootstrap | Express.js | REST API | SQL |').attr('class', 'tech-skills').appendTo('#about')
+  $('<a>').attr('name', 'projects-section').appendTo('#main')
   $('<h2>').text('Projects').attr('class', 'section').appendTo('#main')
   $('<div>').attr('id', 'projects').appendTo('#main')
   // I used https://stackoverflow.com/questions/2941189/how-to-overlay-one-div-over-another-div and https://api.jquery.com/hover/ to figure this hover thing out
@@ -110,7 +114,11 @@ $(() => {
   $('<a>').attr('href', 'https://project-4-client-rantz.herokuapp.com/').attr('target', '_blank').attr('class', 'project-link').text('Check it out!').appendTo('#project4-info')
   $('<img>').attr('src', './images/project4.png').attr('class', 'project-picture').appendTo('#project4-img')
 
+  // --------------------------
+  //           Contact
+  // --------------------------
   $('<div>').attr('id', 'contact-me').appendTo('#main')
+  $('<a>').attr('name', 'contact-section').appendTo('#contact-me')
   $('<h2>').text('Contact Me').attr('class', 'section').appendTo('#contact-me')
   //Found this Method from Jeff actually.
   $('<form>').attr('action', 'https://formsubmit.co/jeremy.spewock@gmail.com').attr('method', 'POST').attr('class', 'contact-form').html(`
@@ -119,4 +127,7 @@ $(() => {
   <br /><button type="submit">Send!</button>
   `).appendTo('#contact-me')
   $('<p>').html('You can also keep up with me on <a href="https://www.linkedin.com/in/jeremyspewock/" class="social-link">LinkedIn</a> and <a href="https://github.com/JSpewock" class="social-link">GitHub</a>').appendTo('#contact-me')
+
+  $('<div>').attr('id', 'back-to-top-div').appendTo('body')
+  $('<a>').attr('href', '#top').attr('id', 'back-to-top').text('Back to Top').appendTo('#back-to-top-div')
 })

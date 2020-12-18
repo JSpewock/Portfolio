@@ -37,6 +37,7 @@ span {
 
 .header {
   /* background: linear-gradient(0.25turn, #51B0EB, #A0EEAE, #EBAA50); */
+  /* inspiration for this from https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient() */
   background: linear-gradient(.025turn, #2193b0, #6dd5ed);
   position: absolute;
   top: 5px;
@@ -149,8 +150,23 @@ p {
 
 #message-input {
   width: 400px;
-  height: 400px;
+  height: 200px;
 }
 #email-input {
   width: 400px;
+}
+
+#contact-me > p {
+  font-size: 20px;
+}
+
+#back-to-top {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 20px;
+}
+#back-to-top-div {
+  text-align: center;
+  margin-top: 60px;
 }
