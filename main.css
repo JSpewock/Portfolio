@@ -67,6 +67,10 @@ p {
   position: absolute;
 }
 
+.project-picture {
+  width: inherit;
+}
+
 .project {
   position: relative;
   display: inline-block;
