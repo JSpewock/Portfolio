@@ -67,8 +67,9 @@ p {
   position: absolute;
 }
 
-#project1 {
+.project {
   position: relative;
+  display: inline-block;
 }
 
 #contact-me {

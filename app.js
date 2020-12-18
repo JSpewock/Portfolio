@@ -50,6 +50,24 @@ $(() => {
   }, () => {
     $('#project2-info').css('display', 'none')
   })
+  $('<h1>').text('GA Course Catalog').attr('class', 'project-title').appendTo('#project2-info')
+  $('<p>').text('For this project I built a course catalog/study guide for General Assembly students in my class! This is a full CRUD app that was built using Node.js, Express, Mongoose, EJS, and Bcrypt.').appendTo('#project2-info')
+
+  $('<div>').attr('id', 'project3').attr('class', 'project').appendTo('#projects')
+  $('<div>').attr('id', 'project3-img').attr('class', 'project-img').appendTo('#project3').hover(() => {
+    $('#project3-info').css('display', 'block')
+  },
+  () => {
+    $('#project3-info').css('display', 'none')
+  }
+  )
+  $('<div>').attr('id', 'project3-info').attr('class', 'project-info').appendTo('#project3').hover(() => {
+    $('#project3-info').css('display', 'block')
+  }, () => {
+    $('#project3-info').css('display', 'none')
+  })
+  $('<h1>').text('CockTails App').attr('class', 'project-title').appendTo('#project3-info')
+  $('<p>').text('This project was actually a collaborative project that I worked on with 2 classmates. It is a MERN stack app that implements Mongo, Express, React, and Node to create a database for storing and searching for various cocktails. It also implements a third party api to increase the number of cocktails in the database.').appendTo('#project3-info')
   $('<div>').attr('id', 'contact-me').appendTo('#main')
   $('<h2>').text('Contact Me').attr('class', 'section').appendTo('#contact-me')
 })
